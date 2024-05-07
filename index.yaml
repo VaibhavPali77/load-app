@@ -9,6 +9,6 @@ entries:
     name: test-app
     type: application
     urls:
-    - https://github.com/VaibhavPali77/load-app.git/test-app-0.1.0.tgz
+    - https://vaibhavpali77.github.io/load-app/test-app-0.1.0.tgz
     version: 0.1.0
 generated: "2024-05-07T19:21:51.512897495+05:30"
