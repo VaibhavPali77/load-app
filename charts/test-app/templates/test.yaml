@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: batch/v1
 kind: Job
 metadata:
   name: postsync-loadtest
@@ -20,3 +20,4 @@ spec:
         # command: ["bash", "/framework/kubeconfig-script.sh", "&&", "sleep", "infinity"]
         command: ["/bin/sh", "-c"]
         args: ["bash /framework/kubeconfig-script.sh && testkube run test git-locust --watch"]
+      restartPolicy: OnFailure
