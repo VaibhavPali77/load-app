@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Job
 metadata:
   name: postsync-loadtest
-  annotations:
-    argocd.argoproj.io/hook: PostSync
 spec:
   manualSelector: true
   parallelism: 1
