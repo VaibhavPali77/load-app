@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Job
+metadata:
+  name: postsync-loadtest
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+spec:
+  manualSelector: true
+  parallelism: 1
+  selector:
+    matchLabels:
+      app: postsync-loadtest
+  template:
+    metadata:
+      labels:
+        app: postsync-loadtest
+    spec:
+      containers:
+      - name: dynamic-app-container
+        image: vaipali/my-first-repo:postsync_v0.2
+        imagePullPolicy: Always
+        # command: ["bash", "/framework/kubeconfig-script.sh", "&&", "sleep", "infinity"]
+        command: ["/bin/sh", "-c"]
+        args: ["bash /framework/kubeconfig-script.sh && testkube run test git-locust --watch"]
