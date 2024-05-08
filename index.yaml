@@ -3,12 +3,12 @@ entries:
   test-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-08T10:10:25.964280818+05:30"
+    created: "2024-05-08T10:16:17.134404372+05:30"
     description: A Helm chart for Kubernetes for deploying a test app for load testing
-    digest: dd72c939f6a995eeeeef5b815a6a8672ed31782497cfa6042b13bf90b5c0b578
+    digest: feb48a2d23af9dc221ad0fb44d9c64733a666ac6a0257cd00bb1527f12258e81
     name: test-app
     type: application
     urls:
-    - https://vaibhavpali77.github.io/load-app/test-app-0.1.5.tgz
-    version: 0.1.5
-generated: "2024-05-08T10:10:25.963959829+05:30"
+    - https://vaibhavpali77.github.io/load-app/test-app-0.1.6.tgz
+    version: 0.1.6
+generated: "2024-05-08T10:16:17.134014849+05:30"
