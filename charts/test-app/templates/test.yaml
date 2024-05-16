@@ -22,4 +22,5 @@ spec:
         # command: ["bash", "/framework/kubeconfig-script.sh", "&&", "sleep", "infinity"]
         command: ["/bin/sh", "-c"]
         args: ["bash /framework/kubeconfig-script.sh && testkube run test git-jmeter --watch"]
+        
       restartPolicy: OnFailure
