@@ -4,6 +4,6 @@ description: A Helm chart for Kubernetes for deploying a test app for load testi
 
 type: application
 
-version: 0.1.9
+version: 0.1.11
 
 appVersion: "1.16.0"
